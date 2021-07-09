@@ -14,7 +14,8 @@ main {
     padding: 64px;
     background: #eee;
     min-height: 100vh;
-    width: 100%
+    width: 100%;
+    position: relative;
 }
 
 main header {
@@ -109,6 +110,34 @@ main header .material-icons:hover {
     height: 100%;
     position: absolute;
     object-fit: cover;
+}
+
+.popup {
+    width: 600px;
+    text-align: center;
+    background: #d9bd29;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #666;
+    /* display: none; */
+}
+
+.display {
+    display: block;
+}
+
+.popup img {
+    width: 80%;
+    border: 8px solid #eee;
+}
+
+.popup h2 {
+    margin: 32px 0 0;
 }
 
 .profiles {
