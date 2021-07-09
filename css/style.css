@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    color: #444;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+main {
+    padding: 64px;
+    background: #eee;
+    min-height: 100vh;
+    width: 100%
+}
+
+main header {
+    position: relative;
+}
+
+main header h1 {
+    text-align:  center;
+    margin: 0;
+}
+
+main header img {
+    width: 560px;
+}
+
+main header .material-icons {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 16px;
+    transition: box-shadow 0.3s;
+    border-radius: 50%;
+}
+
+main header .material-icons:hover {
+    box-shadow: -4px -4px 8px #859cbe,
+                4px 4px 8px #4a576b;
+}
+
+.sub-nav {
+    background: #75b3d6;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 40px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sub-nav img {
+    width: 120px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px;
+    transition: box-shadow 0.3s;
+    border-radius: 20%;
+}
+
+.sub-nav img:hover {
+    box-shadow: -4px -4px 8px #84c9f1,
+                4px 4px 8px #5b8ca8;
+}
+
+.gallery {
+    width: 840px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 64px auto 0;
+}
+
+.gallery .products {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 0 32px 32px 0;
+    border-radius: 4px;
+    box-shadow: -4px -4px 8px rgb(255, 255, 255),
+                4px 4px 8px rgb(194, 193, 193);
+    border: 4px solid #eee;
+    transition: all .3s;
+}
+
+.gallery .products:hover {
+    box-shadow: -8px -8px 16px rgb(255, 255, 255),
+                8px 8px 16px rgb(185, 185, 185);
+    border: 4px solid #ddd;
+}
+
+.gallery .products img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.profiles {
+    width: 640px;
+    margin: 64px auto 0;
+}
+
+.profiles > h2 {
+    margin: 0;
+}
+
+.profiles > h2 img {
+    width: 35%;
+}
+
+.profiles .person {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px auto 0;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: -4px -4px 8px rgb(255, 255, 255),
+                4px 4px 8px rgb(194, 193, 193);
+}
+
+.profiles .person > img {
+    width: 80px;
+    margin-right: 40px;
+}
+
+.profiles .person .name {
+    display: flex;
+    align-items: center;
+}
+
+.profiles .person .name h2 {
+    letter-spacing: 2px;
+    margin: 0 8px 0 0;
+}
+
+.profiles .person .name p {
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.profiles .person .name img {
+    width: 16px;
+    object-fit: contain;
+}
+
+.profiles .person p {
+    margin: 16px 0 0 0;
+}
+
+.profile .desc {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile .desc img {
+    margin-right: 40px; 
+}
+
+.profile .desc h2 {
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.contact {
+    background: #eee;
+    width: 800px;
+    margin: 64px auto 0;
+}
