@@ -112,7 +112,7 @@ main header .material-icons:hover {
     object-fit: cover;
 }
 
-.popup {
+#popup {
     width: 600px;
     text-align: center;
     background: #d9bd29;
@@ -124,19 +124,22 @@ main header .material-icons:hover {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 16px #666;
-    /* display: none; */
 }
 
-.display {
+.display-none {
+    display: none;
+}
+
+.display-block {
     display: block;
 }
 
-.popup img {
+#pupup_img {
     width: 80%;
     border: 8px solid #eee;
 }
 
-.popup h2 {
+#popup h2 {
     margin: 32px 0 0;
 }
 
