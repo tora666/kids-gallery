@@ -146,6 +146,7 @@ main header .material-icons:hover {
     padding: 8px;
     border-radius: 50%;
     transition: all .3s;
+    cursor: pointer;
 }
 
 #popup .material-icons:hover {
