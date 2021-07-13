@@ -82,7 +82,7 @@ main header .material-icons:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 64px auto 0;
+    margin: 32px auto 0;
 }
 
 .gallery .products {
@@ -163,6 +163,13 @@ main header .material-icons:hover {
 #popup h2 {
     margin: 24px 0 0;
     letter-spacing: 2px;
+    font-weight: normal;
+}
+
+#popup span {
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 32px;
 }
 
 .profiles {
@@ -175,7 +182,12 @@ main header .material-icons:hover {
 }
 
 .profiles > h2 img {
-    width: 35%;
+    width: 30%;
+}
+
+.profiles h2 + p {
+    letter-spacing: 2.5px;
+    margin: 16px 0 0;
 }
 
 .profiles .person {
