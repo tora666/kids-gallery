@@ -84,7 +84,7 @@ main header img {
     color: #eee;
     text-align: center;
     background: #d9bd29;
-    position: absolute;
+    position: fixed;
     top: 100px;
     right: 0;
     left: 0;
