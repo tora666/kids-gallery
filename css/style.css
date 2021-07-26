@@ -110,6 +110,7 @@ main header img {
 
 #popup .material-icons {
     font-size: 32px;
+    line-height: 42px;
     padding: 8px;
     border-radius: 50%;
     transition: all .3s;
@@ -121,10 +122,17 @@ main header img {
                 4px 4px 8px #bea421;
 }
 
+.popup-img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .popup_img {
-    width: 80%;
-    margin-top: 8px;
+    width: 100%;
     border: 8px solid #eee;
+    margin-top: 8px;
 }
 
 .profiles {
@@ -297,6 +305,21 @@ main header img {
     #popup .material-icons:hover {
         box-shadow: -4px -4px 8px #eecf35,
                     4px 4px 8px #bea421;
+    }
+
+    .popup_img_container {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .popup_img_container img {
+        width: 100%;
+    }
+
+    #popup_img {
+        width: 100%;
     }
     
     .popup_img {

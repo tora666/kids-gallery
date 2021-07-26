@@ -3,22 +3,24 @@
 {
     const container = document.getElementById('main_container');
     const popup = document.getElementById('popup');
+    const popup_img = document.getElementById('popup_img');
     const popup_title = document.getElementById('popup_title');
     const popup_name = document.getElementById('creater_name');
     const close = document.getElementById('close');
 
     container.addEventListener('click', (e) => {
         // 先に作られたimgがあれば削除する
-        let children = popup.childNodes;
-        if (children[5].tagName === "IMG")
+        let children = popup_img.childNodes;
+        console.log(children);
+        if (children[1] && children[1].tagName === "IMG")
         {
-            children[5].remove();
+            children[1].remove();
         }
 
         // クリックした要素を複製して挿入する。クラスを付けて表示する
         let clone_img = e.target.cloneNode(true);
         clone_img.classList.add('popup_img');
-        popup.insertBefore(clone_img, popup_title);
+        popup_img.insertBefore(clone_img, popup_title);
         popup.classList.remove('display-none');
         popup.classList.add('display-block'); // toggleにすべき？
         
