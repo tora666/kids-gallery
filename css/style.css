@@ -46,6 +46,15 @@ main header img {
     width: 80px;
 }
 
+#mask {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+
 .gallery {
     width: 320px;
     display: flex;
@@ -99,6 +108,11 @@ main header img {
 }
 
 .display-block {
+    display: block;
+    z-index: 99;
+}
+
+.mask-on {
     display: block;
 }
 
@@ -289,13 +303,14 @@ main header img {
     }
 
     #popup > div {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
     }
     
     #popup .material-icons {
         font-size: 48px;
+        line-height: 48px;
         padding: 8px;
         border-radius: 50%;
         transition: all .3s;
@@ -308,18 +323,10 @@ main header img {
     }
 
     .popup_img_container {
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-
-    .popup_img_container img {
-        width: 100%;
-    }
-
-    #popup_img {
-        width: 100%;
     }
     
     .popup_img {

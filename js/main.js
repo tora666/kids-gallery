@@ -6,6 +6,7 @@
     const popup_img = document.getElementById('popup_img');
     const popup_title = document.getElementById('popup_title');
     const popup_name = document.getElementById('creater_name');
+    const mask = document.getElementById('mask');
     const close = document.getElementById('close');
 
     container.addEventListener('click', (e) => {
@@ -16,6 +17,9 @@
         {
             children[1].remove();
         }
+
+        // mask
+        mask.classList.add('mask-on');
 
         // クリックした要素を複製して挿入する。クラスを付けて表示する
         let clone_img = e.target.cloneNode(true);
@@ -35,6 +39,15 @@
             clone_img.remove();
             popup.classList.remove('display-block');
             popup.classList.add('display-none');
+            mask.classList.remove('mask-on');
+        });
+
+        // mask で閉じる
+        mask.addEventListener('click', () => {
+            clone_img.remove();
+            popup.classList.remove('display-block');
+            popup.classList.add('display-none');
+            mask.classList.remove('mask-on');
         });
 
         // 作者名の振り分け用
