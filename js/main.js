@@ -66,6 +66,14 @@
         }
     }
 
+    // 作者名を取得する
+    function getCreatorName(target) {
+        let clone_name = target.src.split('/');
+        clone_name = (clone_name[clone_name.length - 1].split('_'))[0];
+        clone_name = checkName(clone_name);
+        popup_name.textContent = clone_name;
+    }
+
     // 作者名の振り分け用　（クリックイベントの外でも良い...？）
     function checkName(name){
         switch(name) {
@@ -100,10 +108,7 @@
         let clone_img = cloneImg(e.target);
         
         // 作者名を入れる。srcから切り取って入れる。
-        let clone_name = e.target.src.split('/');
-        clone_name = (clone_name[clone_name.length - 1].split('_'))[0];
-        clone_name = checkName(clone_name);
-        popup_name.textContent = clone_name;
+        getCreatorName(e.target);
 
         // バツボタンで閉じる。
         close.addEventListener('click', () => {
@@ -121,6 +126,7 @@
             updateButtons()
             removeImg();
             clone_img = cloneImg(imgList[currentIndex]);
+            
         });
 
         // 進むボタン
@@ -129,6 +135,7 @@
             updateButtons()
             removeImg();
             clone_img = cloneImg(imgList[currentIndex]);
+            getCreatorName(imgList[currentIndex]);
         });
     });
 }
