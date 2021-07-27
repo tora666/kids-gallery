@@ -89,7 +89,7 @@ main header img {
 }
 
 #popup {
-    width: 240px;
+    width: 80%;
     color: #eee;
     text-align: center;
     background: #d9bd29;
@@ -98,7 +98,7 @@ main header img {
     right: 0;
     left: 0;
     margin: auto;
-    padding: 24px 32px 32px;
+    padding: 16px 8px;
     border-radius: 8px;
     box-shadow: 0 0 16px #666;
 }
@@ -117,23 +117,15 @@ main header img {
 }
 
 #popup > div {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
 }
 
 #popup .material-icons {
     font-size: 32px;
-    line-height: 42px;
-    padding: 8px;
-    border-radius: 50%;
-    transition: all .3s;
+    padding: 4px;
     cursor: pointer;
-}
-
-#popup .material-icons:hover {
-    box-shadow: -4px -4px 8px #eecf35,
-                4px 4px 8px #bea421;
 }
 
 .popup-img-container {
@@ -143,10 +135,36 @@ main header img {
     margin: 0 auto;
 }
 
+.popup-img-container #prev {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    font-size: 42px;
+}
+
+.popup-img-container #next {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    font-size: 42px;
+}
+
 .popup_img {
-    width: 100%;
+    width: 75%;
     border: 8px solid #eee;
-    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+#popup_title {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+#popup_title span {
+    font-size: 24px;
+    letter-spacing: 2px;
+    display: block;
 }
 
 .profiles {
@@ -311,7 +329,6 @@ main header img {
     #popup .material-icons {
         font-size: 48px;
         line-height: 48px;
-        padding: 8px;
         border-radius: 50%;
         transition: all .3s;
         cursor: pointer;
@@ -329,19 +346,35 @@ main header img {
         align-items: center;
     }
     
-    .popup_img {
-        width: 80%;
-        margin-top: 8px;
-        border: 8px solid #eee;
+    #popup_img {
+        width: 100%;
+        margin: 0 auto;
     }
 
-    #popup h2 {
-        margin: 24px 0 0;
-        letter-spacing: 2px;
+    #popup_img img {
+        margin-bottom: 16px;
+    }
+
+    #popup #prev {
+        font-size: 52px;
+        top: 260px;
+        left: 24px;
+    }
+
+    #popup #next {
+        font-size: 52px;
+        top: 260px;
+        right: 24px;
+    }
+
+    #popup_title {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 1px;
         font-weight: normal;
     }
     
-    #popup span {
+    #popup_title span {
         letter-spacing: 4px;
         font-weight: bold;
         font-size: 32px;

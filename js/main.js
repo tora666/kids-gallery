@@ -126,7 +126,7 @@
             updateButtons()
             removeImg();
             clone_img = cloneImg(imgList[currentIndex]);
-            
+            getCreatorName(imgList[currentIndex]);
         });
 
         // 進むボタン
