@@ -10,6 +10,10 @@ a {
     color: #eee;
 }
 
+.material-icons {
+    user-select: none;
+}
+
 main {
     padding: 16px;
     background: #eee;
@@ -35,6 +39,10 @@ main header img {
     display: none;
 }
 
+.sub-nav img {
+    user-select: none;
+}
+
 .profiel-icon {
     position: fixed;
     bottom: 16px;
@@ -44,6 +52,7 @@ main header img {
 
 .profiel-icon img {
     width: 80px;
+    user-select: none;
 }
 
 #mask {
