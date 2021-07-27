@@ -153,6 +153,7 @@ main header img {
     width: 75%;
     border: 8px solid #eee;
     box-sizing: border-box;
+    user-select: none;
 }
 
 #popup_title {
