@@ -19,10 +19,10 @@
         prev.classList.remove('display-none');
         next.classList.remove('display-none');
     
-        if (currentIndex === 0) {
+        if (currentIndex <= 0) {
           prev.classList.add('display-none');
         }
-        if (currentIndex === imgList.length - 1) {
+        if (currentIndex >= imgList.length - 1) {
           next.classList.add('display-none');
         }
     }
@@ -33,6 +33,7 @@
         popup.classList.remove('display-block');
         popup.classList.add('display-none');
         mask.classList.remove('mask-on');
+        currentIndex = 0;
     }
 
     // 指定したimgをクローンしてLightboxに挿入する
@@ -123,8 +124,13 @@
         //　戻るボタン
         prev.addEventListener('click', () => {
             currentIndex--;
-            updateButtons()
+            if(currentIndex <= 0)
+            {
+                currentIndex = 0;
+            }
+            console.log(currentIndex);
             removeImg();
+            updateButtons()
             clone_img = cloneImg(imgList[currentIndex]);
             getCreatorName(imgList[currentIndex]);
         });
@@ -132,8 +138,13 @@
         // 進むボタン
         next.addEventListener('click', () => {
             currentIndex++;
-            updateButtons()
+            if(currentIndex >= imgList.length - 1)
+            {
+                currentIndex = imgList.length - 1;
+            }
+            console.log(currentIndex);
             removeImg();
+            updateButtons()
             clone_img = cloneImg(imgList[currentIndex]);
             getCreatorName(imgList[currentIndex]);
         });
