@@ -245,14 +245,35 @@ footer {
     margin: 0;
 }
 
-main .service-title {
+.services {
+    padding: 40px;
+}
+
+.services div {
+    display: flex;
+    padding: 32px 0 56px;
+}
+
+.services > a {
+    padding: 0;
+}
+
+.services .back-button {
+    font-size: 32px;
+    color: #444;
+    margin-left: auto;
+    display: block;
+}
+
+.services .service-title {
     text-align: center;
-    padding-top: 30px;
     margin: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .privacy {
-    padding: 40px;
+    /* padding: 40px; */
     font-family: 'Zen Kurenaido', sans-serif;
 }
 
