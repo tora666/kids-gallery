@@ -288,9 +288,6 @@ main .service-title {
 }
 
 @media (min-width: 800px) {
-    .privacy {
-        background: blue;
-    }
 
     main {
         padding: 64px;
